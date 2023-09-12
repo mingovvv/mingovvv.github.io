@@ -60,11 +60,11 @@ post:
   read_time:
     unit: min
     prompt: read
-  relate_posts: Further Reading
+  relate_posts: 관련된 글
   share: Share
   button:
-    next: Newer
-    previous: Older
+    next: 다음글
+    previous: 이전글
     copy_code:
       succeed: Copied!
     share_link:
