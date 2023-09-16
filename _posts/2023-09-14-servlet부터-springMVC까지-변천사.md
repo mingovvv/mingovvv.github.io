@@ -109,7 +109,7 @@ HTML 파일 내에서 `<%@ ... %>` 태그는 Java import문을, `<% ... %>` 태�
 only jsp로 웹 동적 프로그래밍을 만들어 보니 only servlet으로 처리하던 방법보다는 가독성이 좋아졌지만 하나의 파일에 너무 많은 책임이 몰려있다는 점은 아쉽다.
 jsp파일 상단에서 DB에서 user 목록을 가져오는 코드가 있는데, 이것은 실제 비즈니스 로직 영역을 담당하는 부분이다.
 비즈니스 로직을 수행하는 영역과 뷰 영역을 담당하는 HTML과 함께 하나의 jsp 파일에 노출되어 있다는 것은 유지보수 측면에서 개발자를 힘들게 할 것이다.
-비즈니스 로직 영역인 DB 메서드 명을 바꾸더라도, 뷰 영역인 table 태그의 색상을 넣어도 jsp파일을 수정은 해야하기 때문이다.
+비즈니스 로직 영역인 DB 메서드 명을 바꾸더라도, 뷰 영역인 table 태그의 색상을 넣어도 jsp파일을 수정 해야하기 때문이다.
 
 그럼 특성이 맞게 영역을 분리해보는게 어떨까?
 
@@ -223,7 +223,7 @@ servlet은 이미 존재하고 있는데 그것은 Spring MVC가 앞단에서 �
 ![Desktop View](/assets/img/post/20230915/1.JPG){: width="600" height="600" }
 _DispatcherServlet 계층도_
 
-모든 요청은 `DispatcherServlet`을 통해서 이루어지며 url에 매핑되는 Contoller에게 요청을 넘김으로써 Controller단은 servlet에 종속적이지 않게된다.
+모든 요청은 `DispatcherServlet`을 통해서 이루어지며 url에 매핑되는 Contoller에게 요청을 위임함으로써 Controller단은 servlet에 종속적이지 않게된다.
 ![Desktop View](/assets/img/post/20230915/2.JPG){: width="600" height="600" }
 
 소스를 이어서 확인해보면 @GetMappong 애노테이션을 통해 클라이언트가 호출한 경로의 HTTP 요청을 받는다는 것을 알 수 있다.
