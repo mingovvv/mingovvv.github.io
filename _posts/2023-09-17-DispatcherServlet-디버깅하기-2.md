@@ -1,7 +1,7 @@
 ---
 title: DispatcherServlet Debugging하기 - 2부(Response 영역)
 author: mingo
-date: 2024-09-17 00:30:00 +0900
+date: 2023-09-17 00:30:00 +0900
 categories: [spring, MVC]
 tags: [servlet, mvc, dispatcherservlet]
 ---
@@ -103,5 +103,5 @@ _returnValueHandlers_
 
 `ReturnValueHandler`를 찾았으니 이어서 `RequestResponseBodyMethodProcessor`가 리턴값(User객체)의 데이터를 어떻게 핸들링하는 과정을 따라가보자.
 
-handler.handleReturnValue() 메서드는 
+
 
