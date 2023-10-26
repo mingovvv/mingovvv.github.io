@@ -1,5 +1,5 @@
 ---
-title: 🎨Design Pattern - 전략패턴 빠르게 알아보기
+title: 🎨 Design Pattern - 전략 패턴 빠르게 알아보기
 author: mingo
 date: 2023-10-10 19:30:00 +0900
 categories: [design pattern, behavioral pattern]
