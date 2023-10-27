@@ -13,6 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Get Commit Hash
+        id: commit
+        run: |
+          # 원하는 커밋의 해시를 얻기 위한 git log 명령
+          COMMIT_HASH=$(git log --pretty=format:%H -n 1)
+          echo "::set-output name=commit_hash::$COMMIT_HASH"  
+
       - name: Push to blog-with-github-action Repository
         run: |
           git clone https://github.com/mingovvv/blog-with-github-action.git
@@ -20,8 +27,8 @@ jobs:
           git config user.name 'mingovvv'
           git config user.email 'mingovvv@gmail.com'
           git pull origin main
-          git add .
-          git commit -m "Sync from mingovvv.github.io Repository"
+          # 이전에 얻은 커밋의 해시를 사용하여 해당 커밋의 결과를 가져오기
+          git cherry-pick ${{ steps.commit.outputs.commit_hash }}
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
