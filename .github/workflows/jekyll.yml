@@ -61,7 +61,7 @@ jobs:
           destination-repository-name: 'blog-with-github-action'
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: main
-          target-directory: ''
+          target-directory: 'post'
 
   # Deployment job
   deploy:
