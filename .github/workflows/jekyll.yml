@@ -54,7 +54,7 @@ jobs:
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.MINGO_TOKEN }}
         with:
           source-directory: '_posts'
           destination-github-username: 'mingovvv'
