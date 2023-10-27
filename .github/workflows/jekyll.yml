@@ -50,6 +50,18 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v2
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.AUTO_LEETCODE_PUSH }}
+        with:
+          source-directory: ${{ steps.pages.outputs.base_path }}
+          destination-github-username: 'mingovvv'
+          destination-repository-name: 'blog-with-github-action'
+          commit-message: ${{ github.event.commits[0].message }}
+          target-branch: main
+          target-directory: ''
 
   # Deployment job
   deploy:
