@@ -248,3 +248,4 @@ Contoller의 return 값은 View의 논리명(jsp파일명)을 의미하고 설�
 
 간단한 소스와 함께 servlet에서 spring MVC까지 정리를 흐름을 정리해보았다. 
 Spring MVC로 코드를 작성하면 개발자가 직접 sevlet 코드를 다룰 일이 없지만 Java 웹 프로그래밍의 전반적인 흐름을 이해하기 위해서는 꼭 이해하고 넘어가는 것이 중요하다.  
+
