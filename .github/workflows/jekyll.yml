@@ -54,7 +54,7 @@ jobs:
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.AUTO_LEETCODE_PUSH }}
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         with:
           source-directory: ${{ steps.pages.outputs.base_path }}
           destination-github-username: 'mingovvv'
