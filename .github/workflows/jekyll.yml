@@ -56,7 +56,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         with:
-          source-directory: ${{ steps.pages.outputs.base_path }}
+          source-directory: '_posts'
           destination-github-username: 'mingovvv'
           destination-repository-name: 'blog-with-github-action'
           commit-message: ${{ github.event.commits[0].message }}
