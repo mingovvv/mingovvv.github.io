@@ -8,6 +8,10 @@ tags: [docker]
 
 *사용할 때마다 추가 예정 낄낄*
 
+## docker build
+- `docker build .` : Dockerfile이 존재하는 경로에서 사용하면 파일 스크립트를 읽고 난 뒤 이미지 생성
+- `docker build -t [이미지 명:태그 명] .` : 생성되는 이미지명과 태그명을 설정
+
 ## docker run
 > 컨테이너 실행
  - `docker run --name spring-server -itd -p 9000:9000 -p 9022:22 boot-17-image:latest`
@@ -46,10 +50,14 @@ tags: [docker]
  - `docker image` : 모든 이미지 목록
 
 ## docker start
+> 컨테이너 실행
+ - `docker start [컨테이너ID or 컨테이너 명]` : 컨테이너 실행
 
 ## docker attach
 
 ## docker stop
+> 컨테이너 실행중지
+- `docker stop [컨테이너ID or 컨테이너 명]` : 컨테이너 실행중지
 
 ## docker rm
 > 컨테이너 제거
@@ -58,10 +66,6 @@ tags: [docker]
 ## docker rmi
 > 이미지 제거
  - `docker rmi [이미지ID or 이미지 명]` : 해당하는 이미지 제거
-
-## docker build
- - `docker build .` : Dockerfile이 존재하는 경로에서 사용하면 파일 스크립트를 읽고 난 뒤 이미지 생성
- - `docker build -t [이미지 명:태그 명] .` : 생성되는 이미지명과 태그명을 설정 
 
 ## docker logs
  - `docker logs [컨테이너ID or 컨테이너 명]` : 해당하는 컨테이너 로그

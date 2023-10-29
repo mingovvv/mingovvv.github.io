@@ -1,5 +1,5 @@
 ---
-title: springboot에서 rabbitmq 맛보기
+title: ⌨ springboot에서 rabbitmq 맛보기
 author: mingo
 date: 2023-01-25 23:21:09 +0900
 categories: [rabbitmq]
