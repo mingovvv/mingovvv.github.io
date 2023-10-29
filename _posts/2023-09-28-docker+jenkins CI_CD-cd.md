@@ -1,7 +1,7 @@
 ---
 title: 🐳 Docker로 Jenkins서버를 구축하고 CI/CD 맛보기
 author: mingo
-date: 2023-10-10 19:30:00 +0900
+date: 2023-09-28 19:30:00 +0900
 categories: [docker, jenkins]
 tags: [docker, jenkins, ci/cd]
 ---
