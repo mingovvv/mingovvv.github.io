@@ -1,7 +1,7 @@
 ---
 title: Effective Java - [item28] 배열보다는 리스트를 사용하라 + 공변과 vs 불공변 비교
 author: mingo
-date: 2023-11-01 19:30:00 +0900
+date: 2023-11-01 00:01:00 +0900
 categories: [Effective Java]
 tags: [effective java, 공변, 불공변]
 ---
