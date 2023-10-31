@@ -40,7 +40,7 @@ memory=4GB
 
 #### 3. autoMemoryReclaim=gradual
 마지막 방법은 약간 감동이다. 메모리가 해제되지 않는 이 이슈는 1년이 넘도록 사람들 사이에서 문제가 제기되었지만 MS측에서도 간단하게 처리하지 못한 문제였다.
-> https://github.com/microsoft/WSL/issues/4166
+> _<https://github.com/microsoft/WSL/issues/4166>_
 
 ![Desktop View](/assets/img/post/202310/5.png){: width="1000" height="800" }
 _2019년부터 ㅎㅎ_
@@ -62,5 +62,5 @@ _따끈 따끈 소식_
 autoMemoryReclaim=gradual
 ```
 
-> wsl 2023 release 유튭 : https://www.youtube.com/watch?v=OB2Rfzy5V0Y
-> wsl 2023 release 블로그 : https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/
+> wsl 2023 release 소개 유튭 : _<https://www.youtube.com/watch?v=OB2Rfzy5V0Y>_ </br>
+> wsl 2023 release 소개 블로그 : _<https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/>_
