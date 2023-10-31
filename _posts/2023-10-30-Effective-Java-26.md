@@ -25,7 +25,7 @@ Collection stamp = new ArrayList();
 stamp.add(new Stamp()); // 단순 경고 : Unchecked call to 'add(E)' as a member of raw type 'java.util.Collection'  
 stamp.add(new Coin()); // 단순 경고 : Unchecked call to 'add(E)' as a member of raw type 'java.util.Collection' 
 ```
-![Desktop View](/assets/img/post/202310/1.png){: width="300" height="150" }
+![Desktop View](/assets/img/post/202310/1.png){: width="600" height="300" }
 
 로 타입으로 제네릭 타입을 사용하면 Unchecked call 경고가 뜨지만 정상적으로 컴파일이 되기 때문에 
 실제 컬렉션에서 요소를 꺼내와서 타입 캐스팅 시점에서 런타임 error(ClassCastException)가 발생한다.
