@@ -4,6 +4,7 @@ author: mingo
 date: 2023-09-28 19:30:00 +0900
 categories: [docker, jenkins]
 tags: [docker, jenkins, ci/cd]
+pin: true
 ---
 
 ----
