@@ -17,7 +17,7 @@ tags: [옵서버패턴, strategy, design pattern, behavioral]
 
 주제 객체는 `Publisher 출판사`, 관찰 객체는 `Subscriber 구독자`라고도 불리운다.
 
-![Desktop View](/assets/img/post/20230908/10.png){: width="800" height="800" }
+![Desktop View](/assets/img/post/202311/1.png){: width="800" height="800" }
 _주제 객체와 관찰 객체 관계_
 
 ## | 옵서버 패턴 특징
