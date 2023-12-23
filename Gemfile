@@ -4,9 +4,6 @@ source "https://rubygems.org"
 
 gemspec
 
-group :jekyll_plugins do
-    gem 'jekyll-sitemap'
-
 group :test do
   gem "html-proofer", "~> 4.4"
 end
