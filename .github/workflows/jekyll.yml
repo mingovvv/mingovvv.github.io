@@ -62,6 +62,18 @@ jobs:
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: main
           target-directory: '_posts'
+      - name: Pushes to another repository2
+        id: push_directory_2
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.MINGO_TOKEN }}
+        with:
+          source-directory: 'assets/img/post'
+          destination-github-username: 'mingovvv'
+          destination-repository-name: 'blog-with-github-action'
+          commit-message: ${{ github.event.commits[0].message }}
+          target-branch: main
+          target-directory: '_assets/img/post'
 
   # Deployment job
   deploy:
