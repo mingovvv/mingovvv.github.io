@@ -391,6 +391,22 @@ kubectl create secret tls secret-https --key tls.key --cert tls.crt
 https://www.https.com:30798/hostname
 ```
 
+## Autoscaler
+
+### HPA
+![41.png](/assets/img/post/202401/41.png){: .border w="800" h="550" }
+_HPA_
+Pod의 개수를 늘려주는 **HPA(Horizontal Pod Autoscaler)**는 컨트롤러와 연결되어 replicas를 조절하며 Pod의 자원을 적절하게 사용하도록 도와주는 기능이다.
+병렬 확산이 가능한 stateless application에 주로 사용된다.
+
+### VPA
+Pod의 리소스를 늘려주는 **VPA(Vertical Pod Autoscaler)**는 컨트롤러와 연결되어 Pod 재시작을 통해 Pod의 자원을 Scale-Up 또는 Scale-Down 시키는 기능이다. 
+stateful application에 사용되고 
+
+### CA
+쿠버네티스 클러스터의 Node를 추가해주는 CA(Cluster Autoscaler)는 AWS, Azure, GCP 등 클라우드 플랫폼과 연결하여 사용할 수 있다.
+클라우드 프로바이더를 통해 신규 Node를 추가하고 생성이 미뤄졌던 쿠버네티스 오브젝트들이 Node에 생성된다.
+
 > 출처
 - <https://www.inflearn.com/course/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EA%B8%B0%EC%B4%88/>
 - <https://kubernetes.io/ko/docs/concepts/overview/working-with-objects/kubernetes-objects/>
